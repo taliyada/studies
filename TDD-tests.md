@@ -114,3 +114,22 @@ Uma das vantagens de fazer o teste passar de maneira simples e rápida é "testa
 Uma maneira de testá-lo é garantir que ele falhe quando precise falhar, e passe quando precise passar. 
 
 Parafraseando Jason Gorman, *"se fazer a coisa simples significa fazer o uso de muitos if's ou switchs, muito provavelmente você não entendeu TDD"*. 
+
+### Capítulo 5: TDD e design de classes
+
+##### O problema do carrinho de compras
+
+* Se o carrinho só tiver um item, ele mesmo será o item de maior valor. 
+* Se o carrinho tiver muitos itens, o item de maior valor é o que deverá ser retornado.
+* Um carrinho sem nenhum item deve retornar zero.
+
+Fazemos o teste passar e como ainda nao há uma repetição de código grande a ser eliminada, então podemos ir para o próximo teste. 
+
+Em que momento mudamos o rumo da implementação? (a não necessidade de um cenário para a classe sob o teste)
+
+Muitos praticantes de TDD afirmam que a prática lhes guia no projeto de classes. 
+
+**A prática do TDD não guia o desenvolvedor para um bom projeto de classes de forma automática; a experiência e conhecimento do desenvolvedor são fundamentais ao criar software orientado a objetos.**
+
+##### Diferenças entre o TDD e testes de maneira tradicional
+
